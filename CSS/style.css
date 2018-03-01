@@ -1,0 +1,52 @@
+/*************Display**************/
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 100%;
+	background-color: red;
+}
+#wrapper div{
+	width: 24.7%;
+	height: 400px;
+	text-align: center;
+	background-color: blue;
+	display: inline-block;
+	box-sizing: border-box;
+	}
+#wrapper .block{
+	border-width: 5px; 
+	border-style: solid;
+	border-color: yellow;
+}
+
+
+/*******Box-model*********/
+.outer{
+	width: 400px;
+	height: 400px;
+	background-color: green;
+	margin: 100px; /*top/right/bottom/left*/
+    margin: 50px 100px;  /*1)top-bottom/ 2)right-left*/
+    margin: 50px 100px 0; /*1)top/2)right-left/3)bottom*/
+    margin: 25px 15px 50px 100px; /*1)top/2)right/3)bottom/4)left*/
+    /*margin-top:50px;
+	margin-right: ;
+	margin-bottom: ;
+	margin-left: 50px;*/
+	/*The same as margin*/
+	box-sizing: border-box; /*Включает в ширину бордер и паддинги*/
+	border: 10px black dotted;
+	border-radius: 50%; /*px/%*/
+	padding-top: 10px;
+	padding-left: 25px;
+}
+.outer .inner{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+
+
+
